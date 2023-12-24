@@ -1,0 +1,19 @@
+.image-slider {
+  overflow: hidden; /* Hide any excess images */
+  position: relative; /* Position the images absolute */
+}
+
+.image-slider img {
+  display: none; /* Hide all images by default */
+  position: absolute; /* Position the images absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Resize the image to fit the container */
+  transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
+}
+
+.image-slider img.active {
+  display: block; /* Show only the active image */
+}
